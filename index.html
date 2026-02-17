@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intel Sustainability Timeline</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -39,30 +40,206 @@
         </details>
     </section>
 
-    <section class="goals">
-        <h2>Key Sustainability Goals</h2>
-
-        <div class="goal-card">
-            <i class="fa-solid fa-solar-panel"></i>
-            <h3>100% Renewable Energy</h3>
-            <p>Intel continues expanding renewable electricity across global operations.</p>
+    <section class="goals-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Key Sustainability Goals</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h3>100% Renewable Energy</h3>
+                        <p>Intel continues expanding renewable electricity across global operations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <i class="fa-solid fa-water"></i>
+                        <h3>Water Restoration</h3>
+                        <p>Investing in water conservation and restoration projects worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="goal-card">
+                        <i class="fa-solid fa-recycle"></i>
+                        <h3>Circular Manufacturing</h3>
+                        <p>Reducing waste and increasing material reuse across facilities.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="goal-card">
-            <i class="fa-solid fa-water"></i>
-            <h3>Water Restoration</h3>
-            <p>Investing in water conservation and restoration projects worldwide.</p>
+    <section class="initiatives-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Sustainability Initiatives</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="initiative-card">
+                        <div class="initiative-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3>Carbon Reduction</h3>
+                        <p>Implementing cutting-edge technologies to reduce our carbon footprint across manufacturing facilities and operations worldwide.</p>
+                        <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="initiative-card">
+                        <div class="initiative-icon">
+                            <i class="fa-solid fa-droplet"></i>
+                        </div>
+                        <h3>Water Management</h3>
+                        <p>Developing innovative water conservation strategies and investing in restoration projects to protect freshwater ecosystems.</p>
+                        <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="initiative-card">
+                        <div class="initiative-icon">
+                            <i class="fa-solid fa-gears"></i>
+                        </div>
+                        <h3>Responsible Manufacturing</h3>
+                        <p>Advancing sustainable production methods while ensuring ethical supply chains and safe working conditions for all employees.</p>
+                        <a href="#" class="learn-more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="goal-card">
-            <i class="fa-solid fa-recycle"></i>
-            <h3>Circular Manufacturing</h3>
-            <p>Reducing waste and increasing material reuse across facilities.</p>
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion accordion-custom" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    What is Intel's 2040 net-zero commitment?
+                                </button>
+                            </h2>
+                            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Intel has committed to achieving net-zero greenhouse gas emissions across its global operations and manufacturing facilities by 2040. This includes Scope 1 and Scope 2 emissions, with interim targets set for 2025 and 2030 to ensure steady progress toward this ambitious goal.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    How does Intel source renewable energy?
+                                </button>
+                            </h2>
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Intel sources renewable energy through a combination of direct renewable generation, power purchase agreements (PPAs), and renewable energy credits. The company partners with renewable energy providers globally to ensure a substantial portion of its electricity comes from wind, solar, and other clean energy sources.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    What does "conflict-free" manufacturing mean?
+                                </button>
+                            </h2>
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Conflict-free manufacturing ensures that minerals used in microprocessors and other products are not sourced from conflict regions. Intel was the first major tech company to produce a conflict-free microprocessor, implementing rigorous supply chain audits and traceability standards.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    How is Intel addressing water conservation?
+                                </button>
+                            </h2>
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Intel is committed to water restoration by investing in conservation technologies, water recycling systems, and restoration projects in water-stressed regions. The company aims to restore more water globally than it uses in its operations by 2030.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    What is circular manufacturing?
+                                </button>
+                            </h2>
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Circular manufacturing focuses on reducing waste and maximizing material reuse throughout the production lifecycle. Intel implements strategies such as material recovery, recycling programs, and designing products with end-of-life considerations to minimize environmental impact.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscription-section">
+        <div class="subscription-container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest updates on Intel's sustainability initiatives</p>
+            <form class="subscription-form" onsubmit="handleSubscribe(event)">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
         </div>
     </section>
 
     <footer>
-        <p>Created by Mekdem • Web Development with AI</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>Intel's commitment to sustainability spans decades of innovation and environmental responsibility.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Timeline</a></li>
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#subscribe">Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>For more information, visit Intel's official sustainability page.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Intel Sustainability Timeline. Created by Mekdem • Web Development with AI</p>
+        </div>
     </footer>
-</body>
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleSubscribe(event) {
+            event.preventDefault();
+            const form = event.target;
+            const email = form.querySelector('input[type="email"]').value;
+            
+            // Show success message
+            const btn = form.querySelector('.subscribe-btn');
+            const originalText = btn.textContent;
+            btn.textContent = '✓ Subscribed!';
+            btn.style.backgroundColor = '#4caf50';
+            
+            // Reset form
+            form.reset();
+            
+            // Restore button after 3 seconds
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.backgroundColor = '';
+            }, 3000);
+            
+            console.log('Subscription request for:', email);
+        }
+    </script>
